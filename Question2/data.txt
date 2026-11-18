@@ -1,0 +1,16 @@
+PRODUCT SALES Microphone Speakers Mixing Desk Year 1: 300  150  700 Year 2: 250  200  600 Total: 2200 Average: 366.6666666666667 Sales over 500: 2 Sales under 500: 4DATA LOG
+******************************
+Customer Name: Koketso Mayane
+Product: Restonic Barbados
+VAT: R 185.1
+COMMISSION: R 61.7
+TOTAL: R 1480.8
+
+DATA LOG
+******************************
+Customer Name: koketso mayane
+Product: Cozy Nights Monarch
+VAT: R 60000.0
+COMMISSION: R 20000.0
+TOTAL: R 480000.0
+
