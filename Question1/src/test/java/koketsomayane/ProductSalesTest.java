@@ -1,4 +1,13 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
 package koketsomayane;
+
+/**
+ *
+ * @author Student
+ */
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;

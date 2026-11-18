@@ -1,4 +1,13 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
 package koketsomayane;
+
+/**
+ *
+ * @author Student
+ */
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
@@ -27,6 +36,7 @@ public class ProductSalesGUI extends JFrame {
     private final JTextField priceField = new JTextField();
 
     public ProductSalesGUI() {
+        //creating the application window
         setTitle("Product App");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
@@ -38,6 +48,7 @@ public class ProductSalesGUI extends JFrame {
     }
 
     private void CreateMenu() {
+        //creating the menus
         JMenuBar menuBar = new JMenuBar();
 
         JMenu fileMenu = new JMenu("File");
@@ -59,6 +70,7 @@ public class ProductSalesGUI extends JFrame {
     }
 
     private void CreateForm() {
+        //creating the form fields
         JPanel formPanel = new JPanel(new GridLayout(4, 2, 10, 10));
         formPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
@@ -80,6 +92,7 @@ public class ProductSalesGUI extends JFrame {
     }
 
     private void ProcessSale() {
+        //getting values from the form
         String customerName = customerNameField.getText().trim();
         String productName = (String) productComboBox.getSelectedItem();
         String priceText = priceField.getText().trim();
@@ -102,6 +115,7 @@ public class ProductSalesGUI extends JFrame {
             return;
         }
 
+        //calculating the sale values
         ProductCalculation calculation = new ProductCalculation(productPrice);
         double vat = calculation.GetVat();
         double commission = calculation.GetCommission();
@@ -121,6 +135,7 @@ public class ProductSalesGUI extends JFrame {
 
     private boolean SaveSale(String customerName, String productName,
             double vat, double commission, double total) {
+        //saving the sale to the text file
         try (FileWriter writer = new FileWriter("data.txt", true)) {
             writer.write("DATA LOG ");
             writer.write("****************************** ");
@@ -137,6 +152,7 @@ public class ProductSalesGUI extends JFrame {
     }
 
     private void ClearFields() {
+        //clearing the form
         customerNameField.setText("");
         productComboBox.setSelectedIndex(0);
         priceField.setText("");

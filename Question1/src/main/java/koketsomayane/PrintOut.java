@@ -1,4 +1,13 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
 package koketsomayane;
+
+/**
+ *
+ * @author Student
+ */
 
 public class PrintOut {
     public void PrintTotalProductSales(ProductSales products, int[][] sales) {
